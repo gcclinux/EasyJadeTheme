@@ -1,0 +1,32 @@
+{
+  "name": "EasyJadeTheme",
+  "displayName": "EasyJade Theme",
+  "description": "A beautiful bespoke jade colour theme for VS Code",
+  "version": "0.1.3",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "EasyJade Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/jade-dark-color-theme.json"
+      }
+      ,
+      {
+        "label": "EasyJade Light",
+        "uiTheme": "vs",
+        "path": "./themes/jade-light-color-theme.json"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gcclinux/easy-jade-theme.git"
+  },
+  "publisher": "gcclinux"
+}
