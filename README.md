@@ -7,6 +7,7 @@ EasyJade is a beautiful, bespoke color theme extension for Visual Studio Code, f
 
 - **EasyJade Light**: A soft, light theme with gentle jade greens and warm highlights. Ideal for daytime coding and high visibility.
 - **EasyJade Dark**: A rich, dark theme based on the original Jade palette, with subtle tweaks for improved contrast and uniqueness. Great for night coding and eye comfort.
+- **EasyJade High Contrast**: A high-contrast variant retaining the Jade identity. Strong focus borders and bright accents for maximum readability and accessibility, ideal for users who prefer extra separation between UI elements.
 
 
 ## Screenshots
@@ -18,6 +19,9 @@ Below are examples of both EasyJade Light and EasyJade Dark in action:
 
 ### EasyJade Dark
 ![EasyJade Dark Screenshot](./images/dark.png)
+
+### EasyJade High Contrast
+![EasyJade High Contrast Screenshot](./images/high-contrast.png)
 
 ## Color Details
 
