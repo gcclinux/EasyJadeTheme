@@ -9,7 +9,7 @@ on:
       publish:
         description: 'Publish to VS Code Marketplace (true/false)'
         required: false
-        default: 'false'
+        default: 'true'
 
 jobs:
   package:
