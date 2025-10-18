@@ -48,7 +48,7 @@ This will create a `.vsix` file in your project directory.
 Install the packaged theme in VS Code:
 
 ```bash
-$ code --install-extension EasyJadeTheme-0.1.3.vsix
+$ code --install-extension EasyJadeTheme-<version>.vsix
 ```
 
 ### 3. Activate the Theme
