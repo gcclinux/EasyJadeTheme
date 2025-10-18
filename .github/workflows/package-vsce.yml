@@ -1,0 +1,40 @@
+name: Package VS Code extension
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch: {}
+
+jobs:
+  package:
+    name: Package with vsce
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Use Node.js 18
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Install dependencies (if any)
+        run: |
+          if [ -f package.json ]; then npm ci; fi
+
+      - name: Install vsce
+        run: npm install -g vsce
+
+      - name: Package extension
+        id: package
+        run: |
+          # create package and capture produced filename
+          vsce package
+          echo "vsix_file=$(ls -1 *.vsix | head -n 1)" >> $GITHUB_OUTPUT
+
+      - name: Upload VSIX artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: easyjade-vsix
+          path: ${{ steps.package.outputs.vsix_file }}
