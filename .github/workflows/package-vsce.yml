@@ -14,10 +14,10 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Use Node.js 18
+      - name: Use Node.js 20
         uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 20
 
       - name: Install dependencies (if any)
         run: |
@@ -30,8 +30,14 @@ jobs:
         id: package
         run: |
           # create package and capture produced filename
-          vsce package
-          echo "vsix_file=$(ls -1 *.vsix | head -n 1)" >> $GITHUB_OUTPUT
+          set -o pipefail
+          if vsce package; then
+            echo "vsix_file=$(ls -1 *.vsix | head -n 1)" >> $GITHUB_OUTPUT
+          else
+            echo "global vsce failed, trying npx @vscode/vsce..."
+            npx --yes @vscode/vsce package
+            echo "vsix_file=$(ls -1 *.vsix | head -n 1)" >> $GITHUB_OUTPUT
+          fi
 
       - name: Upload VSIX artifact
         uses: actions/upload-artifact@v4
