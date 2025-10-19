@@ -1,6 +1,8 @@
 
 # EasyJade Theme for VS Code
 
+![EasyJade Theme](./images/logo-128x128.png)
+
 EasyJade is a beautiful, bespoke color theme extension for Visual Studio Code, featuring both light and dark variants inspired by jade tones. Perfect for users who want a fresh, readable, and elegant look for their editor.
 
 ## Themes Included
@@ -25,7 +27,7 @@ Below are examples of both EasyJade Light and EasyJade Dark in action:
 
 ## Color Details
 
-Both themes feature carefully selected colors for backgrounds, foregrounds, selections, highlights, and UI elements. The dark theme is based on `jade.json` with unique adjustments, while the light theme uses lighter, harmonious jade-inspired colors.
+Both themes feature carefully selected colors for backgrounds, foregrounds, selections, highlights, and UI elements. The dark theme is my favourite with unique adjustments to my eyes, while the light theme uses lighter, harmonious jade-inspired colors.
 
 ## License
 

@@ -2,7 +2,7 @@
   "name": "EasyJadeTheme",
   "displayName": "EasyJade Theme",
   "description": "A beautiful bespoke jade colour theme for VS Code",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "scripts": {
     "vsce:package": "vsce package"
   },
@@ -37,6 +37,6 @@
     "type": "git",
     "url": "https://github.com/gcclinux/EasyJadeTheme.git"
   },
-  "publisher": "gcclinux"
+  "publisher": "EasyJadeTheme"
 }
 
