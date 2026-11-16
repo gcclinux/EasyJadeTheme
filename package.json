@@ -2,7 +2,7 @@
   "name": "easyjade-theme",
   "displayName": "EasyJade Theme",
   "description": "A beautiful bespoke jade colour theme for VS Code",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "icon": "images/logo-128x128.png",
   "scripts": {
     "vsce:package": "vsce package"
